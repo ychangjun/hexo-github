@@ -386,7 +386,7 @@ rightside_item_order:
 
 # MathJax
 mathjax:
-  enable: false
+  enable: true
   per_page: false
 
 # KaTeX
@@ -905,7 +905,7 @@ note:
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
   style: flat
-  icons: true
+  icons: false
   border_radius: 3
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
@@ -918,15 +918,15 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
-# Inject the css and script (aplayer/meting)
+# Inject the css and script (aplayer/meting)音乐
 aplayerInject:
-  enable: false
-  per_page: true
+  enable: true
+  per_page: false
 
 # Snackbar (Toast Notification 彈窗)
 # https://github.com/polonel/SnackBar
@@ -1000,6 +1000,8 @@ inject:
     # 星空背景 + 流星特效
     - <canvas id="universe"></canvas>
     - <script defer src="/js/universe.js"></script>
+    # 音乐  data-fixed="true" 开启全局吸底
+    # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
 
 # CDN
 # Don't modify the following settings unless you know how they work

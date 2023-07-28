@@ -109,6 +109,18 @@ deploy:
 
 
 
+# 数学
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+
+
 # 本地搜索
 search:
   path: search.xml
@@ -141,3 +153,10 @@ live2d:
     height: 300 #控制看板娘大小
   mobile:
     show: true # 手机中是否展示
+
+
+
+# 音乐插件
+aplayer: 
+  meting: true
+  asset_inject: false
