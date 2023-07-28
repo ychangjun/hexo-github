@@ -6,6 +6,12 @@
       avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速、简单且强大的网志框架
 
+    - name: Akilar
+      link: https://akilar.top
+      avatar: 
+      descr: 欢迎光临糖果屋
+      siteshot: https://cdn.jsdelivr.net/gh/Akilarlxh/ScreenShot@gh-pages/akilar.top.jpg
+
 - class_name: 网站
   class_desc: 值得推荐的网站
   link_list:
