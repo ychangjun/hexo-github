@@ -1002,6 +1002,10 @@ inject:
     - <script defer src="/js/universe.js"></script>
     # 音乐  data-fixed="true" 开启全局吸底
     # - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+    # 樱花飘落效果
+    # - <script async src="https://npm.elemecdn.com/tzy-blog/lib/js/other/sakura.js"></script>
+    # 网站恶搞标题
+    - <script async src="/js/title.js"></script>
 
 # CDN
 # Don't modify the following settings unless you know how they work

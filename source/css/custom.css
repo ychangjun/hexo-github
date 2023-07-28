@@ -25,6 +25,7 @@
 
 
 
+/* ------------------------------------------------ */
 /* 霓虹灯效果 */
 /* 日间模式不生效 */
 [data-theme="light"] #site-name,
@@ -146,6 +147,7 @@
 
 
 
+/* ------------------------------------------------ */
 /* 个人侧边栏卡片渐变色 */
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
@@ -211,6 +213,23 @@
 
 
 
+/* 个人信息卡片背景图蒙版渐变 */
+/* [data-theme="light"] #aside-content > .card-widget.card-info {
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/snowflower.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+}
+[data-theme="dark"] #aside-content > .card-widget.card-info {
+  background-image: url(https://sourcebucket.s3.ladydaily.com/img/aurora.webp);
+  background-repeat: no-repeat;
+  background-attachment: inherit;
+  background-size: 100%;
+} */
+
+
+
+/* ------------------------------------------------ */
 /* h1~h6标题小风车转都效果 */
 /* 文章页H1-H6图标样式效果 */
 /* 控制风车转动速度 4s那里可以自己调节快慢 */
@@ -303,6 +322,7 @@ h6::before {
 
 
 
+/* ------------------------------------------------ */
 /* 宽屏自适应 */
 /* 全局宽度 */
 .layout {
@@ -331,4 +351,47 @@ h6::before {
 }
 .page:not(.page.home) .aside-content {
   display: none;
+}
+
+
+
+/* ------------------------------------------------ */
+/* 个人卡片鼠标悬浮彩带效果 */
+.author_top:hover {
+  background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
+  background-size: cover;
+}
+
+
+
+/* ------------------------------------------------ */
+/* 头像呼吸灯 */
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+  animation: huxi_light 4s ease-in-out infinite;
+}
+[data-theme="dark"] .avatar-img {
+  animation: huxi_dark 4s ease-in-out infinite;
+}
+@keyframes huxi_light {
+  0% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #e9f5fa;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #e9f5fa;
+  }
+}
+@keyframes huxi_dark {
+  0% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
+  50% {
+    box-shadow: 0px 0px 5px 5px #39c5bb;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 1px #39c5bb;
+  }
 }
