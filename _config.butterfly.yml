@@ -690,7 +690,7 @@ tag_ui: # 留空或 index
 # Website Background (设置网站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(http://xxxxxx.com/xxx.jpg)
-background:
+background: url(https://source.fomal.cc/img/home_bg.webp)
 
 # Footer Background 页脚背景
 footer_bg: false
@@ -989,6 +989,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/live2d-widget/autoload.js"></script>
