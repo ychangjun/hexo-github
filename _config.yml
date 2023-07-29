@@ -3,13 +3,13 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 长风依旧
-subtitle: ''
-description: ''
+title: Were all heroes 	#标题
+subtitle: '' #副标题
+description: 'I ll catch up with you' #个性签名
 keywords:
-author: 微风
-language: zh-CN
-timezone: ''
+author: 微风 #作者
+language: zh-CN #语言
+timezone: Asia/Shanghai  #中国的时区
 # default(en)
 # zh-CN (简体中文)
 # zh-TW (繁体中文)

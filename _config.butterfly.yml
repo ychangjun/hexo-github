@@ -29,7 +29,7 @@ highlight_lang: true # show the code language
 # 代码框展开/关闭
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
 # 代码高度限制
-highlight_height_limit: false # unit: px
+highlight_height_limit: 300 # unit: px
 # 代码换行
 code_word_wrap: false
 
@@ -38,6 +38,7 @@ code_word_wrap: false
 #   icon: link || the description || color
 social:
 # 书写格式 图标名：url || 描述性文字 || color
+  fab fa-github: https://github.com/ychangjun || Github || '#24292e'
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
@@ -47,11 +48,11 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: https://img0.baidu.com/it/u=3487243724,4005355975&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: https://img0.baidu.com/it/u=3487243724,4005355975&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500 #图片路径
   effect: false # 头像会一直转圈
 
 # 顶部图
@@ -85,16 +86,23 @@ category_img:
 category_per_img:
 
 cover:
-   # 是否显示文章封面
-  index_enable: true
-  aside_enable: true
-  archives_enable: true
+  # 是否显示文章封面
+  index_enable: true #主页是否显示文章封面图
+  aside_enable: false #侧栏是否显示文章封面图
+  archives_enable: true  #归档页面是否显示文章封面图
  # 封面显示的位置
   # 三个值可配置 left , right , both
   position: both
   # 当没有设置cover时，默认的封面显示
   default_cover:
     # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    # 当配置多张图片时，会随机选择一张作为 cover. 此时写法为
+    # - https:
+    # - http:
+    # - http:
+    # - http:
+    # - http:
+    # - http:
 
 
 
@@ -120,7 +128,7 @@ post_meta:
     tags: false # true or false 主页是否显示标签
     label: true # true or false 显示描述性文字
   post:
-    date_type: both # created or updated or both 文章页日期是创建日或者更新日或都显示
+    date_type: updated # created or updated or both 文章页日期是创建日或者更新日或都显示
     date_format: date # date/relative 显示日期还是相对日期
     categories: true # true or false 文章页是否显示分类
     tags: true # true or false 文章页是否显示标签
@@ -158,7 +166,7 @@ photofigcaption: false
 copy:
   enable: true  # 是否开启网站复制权限
   copyright:  # 复制的内容后面加上版权信息
-    enable: false  # 是否开启复制版权信息添加
+    enable: true  # 是否开启复制版权信息添加
     limit_count: 50  # 字数限制，当复制文字大于这个字数限制时，将在复制的内容后面加上版权信息
 
 
@@ -243,8 +251,8 @@ footer:
     since: 2023  # 站点起始时间
 
   # 页脚文本 
-  custom_text:
-  copyright: true # Copyright of theme and framework
+  custom_text: 本网站基于<a href="https://hexo.io/zh-cn/">Hexo框架</a>和butterfly主题搭建而成 # 页脚自定义文本
+  copyright: false # Copyright of theme and framework  主题与框架的版权
 
 
 
@@ -260,17 +268,17 @@ aside:
     archive: true
     tag: true
     category: true
-  card_author:
+  card_author: # 个人信息
     enable: true
     description:
     button:  # 头像下面按钮
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 前往github主页 #按钮文字
+      link: https://github.com/ychangjun
   card_announcement:  # 公告
     enable: true
-    content: 公告 # 公告显示文字
+    content: This is my Blog  #修改公告栏信息 # 公告显示文字
   card_recent_post: # 最新文章
     enable: true
     limit: 5  # 最新文章显示数量
@@ -312,7 +320,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: false
-  publish_date: 2023/6/0 00:00:00 #网页开通时间
+  publish_date: 2023/6/1 00:00:00 #网页开通时间
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -766,13 +774,15 @@ ClickShowText:
     - 敬业
     - 诚信
     - 民主
+    - 文明
     - 自由
+    - 平等
     - 公正
     - 公平
-    - 法制
+    - 法治
     - 社会
   fontSize: 15px
-  random: false
+  random: true
   mobile: false
 
 # Default display mode (網站默認的顯示模式)
@@ -933,8 +943,8 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-left
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
 
