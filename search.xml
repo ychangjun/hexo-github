@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>如何搭建个人博客</title>
+      <link href="/2023/06/02/blog-06/00/"/>
+      <url>/2023/06/02/blog-06/00/</url>
+      
+        <content type="html"><![CDATA[<p>本博客基于 <a href="https://hexo.io/zh-cn/">Hexo框架</a> 以及 butterfly 主题组成.<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 下载框架 <span class="attr">https</span>:<span class="comment">//hexo.io/zh-cn/</span></span><br><span class="line"><span class="number">2.</span> 搭建<span class="title class_">GitHub</span>库,进行绑定连接<span class="string">`如何搭建和Gitee相似`</span></span><br><span class="line"><span class="number">3.</span> <span class="attr">https</span>:<span class="comment">//butterfly.js.org/butterfly主题 基础搭建文档 Jerry(作者) 搭建的基础文档</span></span><br><span class="line"><span class="number">4.</span> 学习引入方法 <span class="attr">https</span>:<span class="comment">//b.leonus.cn/2022/custom.html 这个简单学的很快</span></span><br><span class="line"><span class="number">5.</span> 学完基础学习进阶搭建个人博客网站 <span class="attr">https</span>:<span class="comment">//www.fomal.cc/posts/3451f874.html 作者搭建的进阶文档</span></span><br><span class="line">作者在文档中引入了多个其他博客写的<span class="string">`教程文档`</span>, 作者写的可能不会很全面, 但是认真看文档还是能达到自己想要的效果.</span><br></pre></td></tr></table></figure></p><ol><li><p>生成<a href="https://hexo.io/zh-cn/">Hexo框架</a> </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init `blog(文件名)`</span><br><span class="line"><span class="built_in">cd</span> `blog(文件名)`</span><br><span class="line">npm install </span><br><span class="line">hexo server <span class="comment"># 运行文件</span></span><br></pre></td></tr></table></figure></li><li><p>绑定GitHub库   # 可自行绑定其他库, 根据需求更改</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. 绑定github库 https://github.com/</span><br><span class="line">2. vercel进行部署 https://vercel.com/</span><br><span class="line">3. 部署完成后,将github库对应名称修改成 用户名.github.io 这种格式</span><br><span class="line">*  如果遇到部署完毕,打开网页显示404</span><br><span class="line">*  进入npm官网 https://ychangjun.github.io/ 或 vscode 根目录下 安装 npm i hexo-deployer-git</span><br><span class="line">*  上传原生文件 public 文件</span><br></pre></td></tr></table></figure></li></ol><ol><li><p>安装 butterfly主题</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Git安装 (Github)</span><br><span class="line"><span class="comment"># 稳定版【推荐】</span></span><br><span class="line"><span class="comment"># 在你的 Hexo 根目录里</span></span><br><span class="line">git <span class="built_in">clone</span> -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line"></span><br><span class="line">Git安装 (Gitee)</span><br><span class="line"><span class="comment"># 稳定版【建议】</span></span><br><span class="line"><span class="comment"># 在你的 Hexo 根目录里</span></span><br><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line"></span><br><span class="line">npm安装</span><br><span class="line">npm install hexo-theme-butterfly</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文章配置属性</title>
+      <link href="/2023/06/01/blog-06/001/"/>
+      <url>/2023/06/01/blog-06/001/</url>
+      
+        <content type="html"><![CDATA[<!-- raw的外挂标签是告诉渲染引擎这段代码不用渲染。 --><div class="example wow animate__bounceInUp">Content to Reveal Here-----标签动画</div><p>title                       【必需】文章标题<br>date                        【必需】文章创建日期<br>updated                     【可选】文章更新日期<br>tags                        【可选】文章标签<br>categories                  【可选】文章分类<br>keywords                    【可选】文章关键字<br>description                 【可选】文章描述<br>top_img                     【可选】文章顶部图片<br>cover                       【可选】文章缩略图(如果没有设置top_img,文章页顶部将显示缩略图，可设为false/图片地址/留空)<br>comments                    【可选】显示文章评论模块(默认 true)<br>toc                         【可选】显示文章TOC(默认为设置中toc的enable配置)<br>toc_number                  【可选】显示toc_number(默认为设置中toc的number配置)<br>toc_style_simple            【可选】显示 toc 简洁模式<br>copyright                   【可选】显示文章版权模块(默认为设置中post_copyright的enable配置)<br>copyright_author            【可选】文章版权模块的文章作者<br>copyright_author_href       【可选】文章版权模块的文章作者链接<br>copyright_url               【可选】文章版权模块的文章连结链接<br>copyright_info              【可选】文章版权模块的版权声明文字<br>mathjax                     【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)<br>katex                       【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)<br>aplayer                     【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置<br>highlight_shrink            【可选】配置代码框是否展开(true/false)(默认为设置中highlight_shrink的配置)<br>aside                       【可选】显示侧边栏 (默认 true)</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
