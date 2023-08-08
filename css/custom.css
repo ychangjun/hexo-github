@@ -83,6 +83,7 @@
   background: #191919ee;
 }
 
+
 /* 个人信息Follow me按钮 */
 #aside-content > .card-widget.card-info > #card-info-btn {
   background-color: #3eb8be;
@@ -185,16 +186,16 @@
 
 /* -------------------------------------------------------- */
 /* 友链一行显示更多 */
-.site-card {
+/* .site-card {
   width: calc(100% / 5 - 16px) !important;
   border-radius: 18px !important;
 }
 .site-card .img {
   height: 165px !important;
   border-radius: 18px !important;
-}
+} */
 /* 适应宽度不同的设备 */
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
   .site-card {
     width: calc(100% / 4 - 16px) !important;
   }
@@ -208,11 +209,12 @@
   .site-card {
     width: calc(100% / 2 - 16px) !important;
   }
-}
+} */
 
 
 
 /* 雪花特效 */
+/*
 [data-theme="light"] #snow{
   display: block;
   position: fixed;
@@ -223,8 +225,11 @@
   pointer-events: none;
   z-index: -2;
 }
+*/
 
 /* 雪花黑夜模式不显示 */
+/*
 [data-theme="dark"] #snow{
   display: none;
 }
+*/
