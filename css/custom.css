@@ -25,8 +25,6 @@
 
 
 
-/* ------------------------------------------------ */
-/* 个人侧边栏卡片渐变色 */
 /* 侧边栏个人信息卡片动态渐变色 */
 #aside-content > .card-widget.card-info {
   background: linear-gradient(
@@ -77,13 +75,10 @@
     background-position: 0% 50%;
   }
 }
-
 /* 黑夜模式适配 */
 [data-theme="dark"] #aside-content > .card-widget.card-info {
   background: #191919ee;
 }
-
-
 /* 个人信息Follow me按钮 */
 #aside-content > .card-widget.card-info > #card-info-btn {
   background-color: #3eb8be;
@@ -108,7 +103,6 @@
 
 
 
-/* ------------------------------------------------ */
 /* 宽屏自适应 */
 /* 全局宽度 */
 .layout {
@@ -141,7 +135,6 @@
 
 
 
-/* ------------------------------------------------ */
 /* 个人卡片鼠标悬浮彩带效果 */
 /* .author_top:hover {
   background: url(https://tuchuang.voooe.cn/images/2023/01/02/snow.gif);
@@ -150,8 +143,6 @@
 
 
 
-/* ------------------------------------------------ */
-/* 头像呼吸灯 */
 /* 头像呼吸灯 */
 [data-theme="light"] .avatar-img {
   animation: huxi_light 4s ease-in-out infinite;
@@ -184,7 +175,6 @@
 
 
 
-/* -------------------------------------------------------- */
 /* 友链一行显示更多 */
 /* .site-card {
   width: calc(100% / 5 - 16px) !important;
